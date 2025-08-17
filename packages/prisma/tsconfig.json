@@ -1,3 +1,9 @@
 {
-  "extends": "../typescript-config/base.json"
+  "extends": "../typescript-config/base.json",
+"compilerOptions": {
+    "outDir": "dist",         // compiled JS goes to dist
+    "rootDir": "src",         // source TS files
+    "composite": true         // required for TurboRepo incremental builds
+  },
+  "include": ["src"]
 }
